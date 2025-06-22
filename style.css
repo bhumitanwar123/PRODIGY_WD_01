@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
+  scroll-behavior: smooth;
+}
+body {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+nav.scrolled {
+  background: linear-gradient(to right, #3f51b5, #9c27b0);
+}
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #00e5ff;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+nav.scrolled a {
+  color: #fff;
+}
+nav a:hover {
+  color: #ff4081;
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+header a {
+  padding: 0.8rem 2rem;
+  background: #ff4081;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255, 64, 129, 0.4);
+}
+header a:hover {
+  background: #c2185b;
+  transform: scale(1.05);
+}
+section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+section h2 {
+  font-size: 2.2rem;
+  color: #00e5ff;
+}
+section p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+footer {
+  background: #111;
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
+footer a {
+  color: #00e5ff;
+  text-decoration: none;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+  }
+}

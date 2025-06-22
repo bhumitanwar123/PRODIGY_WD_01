@@ -8,7 +8,7 @@ A futuristic, fully responsive landing page with animated glowing headings, cosm
 
 ## 🚀 Live Demo
 
-🌐 [Click Here to Visit the Live Site](https://bhumitanwar123.github.io/PRODIGY_WD_02/)  
+🌐 [Click Here to Visit the Live Site](https://bhumitanwar123.github.io/PRODIGY_WD_01/)  
 📁 [GitHub Repository](https://github.com/bhumitanwar123/PRODIGY_WD_02)
 
 ---
